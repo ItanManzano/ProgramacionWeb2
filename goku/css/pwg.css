@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffff00, #0000ff, #ff0000); /* Degradado de amarillo a azul y luego a rojo */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacio entre el bloque de imágenes y el texto */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacio aumentado entre las imágenes */
+    background-color: transparent; /* Fondo transparente para mostrar el degradado */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.image-box {
+    border: 2px solid #ccc;
+    background-color: #fff; /* Fondo blanco para los cuadros */
+    padding: 10px; /* Añade espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
+}
+
+.image-box img {
+    width: 300px; /* Tamaño de las imágenes */
+    height: 300px;
+    cursor: pointer;
+    object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+}
+
+.image-box:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+.text-container {
+    max-width: 90%; /* Limita el ancho máximo del contenedor del texto */
+    padding: 20px; /* Añade relleno interno al contenedor del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para el recuadro del texto */
+    border-radius: 10px; /* Bordes redondeados para el recuadro del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+#texto-principal {
+    font-size: 24px; /* Tamaño del texto en h1 ajustado */
+    color: #333;
+    margin: 0;
+}
